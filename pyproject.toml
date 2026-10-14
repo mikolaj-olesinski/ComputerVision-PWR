@@ -1,0 +1,15 @@
+[project]
+name = "computer-vision-pwr"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.2",
+    "opencv-python>=4.0",
+    "pycocotools>=2.0.11",
+    "scikit-image>=0.26.0",
+    "torch>=2.14.1",
+    "torchvision>=0.13",
+]
