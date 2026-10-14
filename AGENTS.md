@@ -26,3 +26,8 @@ Computer Vision course labs (PWr). All documentation, code comments, notebook te
 - Clear, high-contrast colors. A given variable/series keeps the **same color across all plots** (define a color dict/constants once, e.g. `COLORS = {"R": "tab:red", ...}`).
 - Images shown with `plt.imshow`: convert BGR to RGB first; use `cmap="gray"` for single-channel.
 - Review every plot a second time after rendering: check that labels, axes, legends and colors are readable and nothing overlaps or is clipped. Fix before moving on.
+
+## Skills (`.claude/skills/`)
+- `jupyter-notebook` (OpenAI, `openai/skills`, Apache-2.0) – scaffold/edit `.ipynb` from templates; helper `scripts/new_notebook.py`.
+- `ponytail`, `ponytail-review`, `ponytail-audit`, `ponytail-debt`, `ponytail-gain`, `ponytail-help` (DietrichGebert/ponytail, MIT) – smallest-solution, anti-over-engineering workflow. Skills only; the plugin's Node hooks are not installed.
+- Built-in `dataviz` – use for chart design.
