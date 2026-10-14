@@ -30,4 +30,5 @@ Computer Vision course labs (PWr). All documentation, code comments, notebook te
 ## Skills (`.claude/skills/`)
 - `jupyter-notebook` (OpenAI, `openai/skills`, Apache-2.0) – scaffold/edit `.ipynb` from templates; helper `scripts/new_notebook.py`.
 - `ponytail`, `ponytail-review`, `ponytail-audit`, `ponytail-debt`, `ponytail-gain`, `ponytail-help` (DietrichGebert/ponytail, MIT) – smallest-solution, anti-over-engineering workflow. Skills only; the plugin's Node hooks are not installed.
+- `scientific-visualization` (K-Dense-AI/scientific-agent-skills, MIT) – figure design/audit; journal-oriented, use for palette and integrity checks, not for journal export. Scripts are network-free.
 - Built-in `dataviz` – use for chart design.
