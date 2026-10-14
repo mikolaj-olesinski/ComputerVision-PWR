@@ -8,7 +8,7 @@ Computer Vision course labs (PWr). All documentation, code comments, notebook te
 - Push to `main` only when the user asks.
 
 ## Layout
-- `labN/` – one directory per lab (notebooks, images, theory). Notebooks reference images by relative path.
+- `labN/task.ipynb` – the notebook to solve; `labN/materials/` – helper notebooks and theory; `labN/data/` – images. Notebooks use relative paths (`data/...` from the task, `../data/...` from materials).
 
 ## OpenCV
 - No magic numbers where OpenCV has a named constant. Use `cv2.COLOR_BGR2GRAY`, `cv2.THRESH_BINARY`, `cv2.BORDER_REFLECT`, `cv2.INTER_LINEAR`, etc., never their integer values.
