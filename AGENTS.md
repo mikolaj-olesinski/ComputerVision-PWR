@@ -39,6 +39,4 @@ Computer Vision course labs (PWr). All documentation, code comments, notebook te
 - Validate with a source independent of the method under test (no circular masks).
 - Write conclusions only after viewing the plot; state only what it shows. Say plainly when an earlier claim was wrong.
 - Legends go outside the axes so they never cover data.
-- Do not commit notebook outputs or execution counts (strip before commit); run notebooks via `nbconvert` into the scratchpad.
-- `ipywidgets` sliders are not tested interactively; mention this as a limitation.
 - The user is learning: explain new methods briefly in chat (Polish), keep notebook text minimal English.
