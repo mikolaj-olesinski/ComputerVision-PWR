@@ -1,0 +1,43 @@
+# AGENTS.md
+
+Computer Vision course labs (PWr). All documentation, code comments, notebook text and plot labels are in **English**.
+
+## Environment
+- Package manager: **uv** (Python 3.12). Use `uv sync`, `uv run <cmd>`, `uv add <pkg>`. Never `pip install`.
+- Do not commit `.env`, tokens, `.DS_Store`, local settings. Never print the GitHub token.
+- Push to `main` only when the user asks.
+
+## Layout
+- `labN/task.ipynb` – the notebook to solve; `labN/materials/` – helper notebooks and theory; `labN/data/` – images. Notebooks use relative paths (`data/...` from the task, `../data/...` from materials).
+
+## OpenCV
+- No magic numbers where OpenCV has a named constant. Use `cv2.COLOR_BGR2GRAY`, `cv2.THRESH_BINARY`, `cv2.BORDER_REFLECT`, `cv2.INTER_LINEAR`, etc., never their integer values.
+- Other unavoidable numbers (thresholds, kernel sizes) go into named variables defined once, e.g. `THRESHOLD = 128`.
+
+## Notebooks
+- All imports in the first code cell, at the top.
+- Data loading (images, files) goes in its own separate cell, apart from processing and plotting cells.
+- Keep text minimal: short English markdown only where it is needed. No emojis, no long explanations.
+- Keep cells small and focused; outputs must be reproducible (fixed seeds).
+
+## Plots
+- All titles, axis labels, legends and tick labels in English.
+- Axes always visible and labelled (with units where applicable). Titles for every subplot.
+- Clear, high-contrast colors. A given variable/series keeps the **same color across all plots** (define a color dict/constants once, e.g. `COLORS = {"R": "tab:red", ...}`).
+- Images shown with `plt.imshow`: convert BGR to RGB first; use `cmap="gray"` for single-channel.
+- Review every plot a second time after rendering: check that labels, axes, legends and colors are readable and nothing overlaps or is clipped. Fix before moving on.
+
+## Skills (`.claude/skills/`)
+- `jupyter-notebook` (OpenAI, `openai/skills`, Apache-2.0) – scaffold/edit `.ipynb` from templates; helper `scripts/new_notebook.py`.
+- `ponytail`, `ponytail-review`, `ponytail-audit`, `ponytail-debt`, `ponytail-gain`, `ponytail-help` (DietrichGebert/ponytail, MIT) – smallest-solution, anti-over-engineering workflow. Skills only; the plugin's Node hooks are not installed.
+- `scientific-visualization` (K-Dense-AI/scientific-agent-skills, MIT) – figure design/audit; journal-oriented, use for palette and integrity checks, not for journal export. Scripts are network-free.
+- Built-in `dataviz` – use for chart design.
+
+## Method
+- Justify a parameter (threshold, kernel size) with an experiment placed before its first use; never pick it by eye alone.
+- Judge results against the known answer (e.g. expected object count line) and a number (IoU, count), not "looks good".
+- Validate with a source independent of the method under test (no circular masks).
+- Write conclusions only after viewing the plot; state only what it shows. Say plainly when an earlier claim was wrong.
+- Legends go outside the axes so they never cover data.
+- The user is learning: explain new methods briefly in chat (Polish), keep notebook text minimal English.
+- Keep `labN/task_empty.ipynb` next to `task.ipynb`: the original unsolved task, untouched, for comparison.
