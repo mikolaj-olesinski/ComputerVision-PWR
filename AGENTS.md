@@ -40,3 +40,4 @@ Computer Vision course labs (PWr). All documentation, code comments, notebook te
 - Write conclusions only after viewing the plot; state only what it shows. Say plainly when an earlier claim was wrong.
 - Legends go outside the axes so they never cover data.
 - The user is learning: explain new methods briefly in chat (Polish), keep notebook text minimal English.
+- Keep `labN/task_empty.ipynb` next to `task.ipynb`: the original unsolved task, untouched, for comparison.
