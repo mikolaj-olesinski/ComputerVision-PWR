@@ -9,7 +9,6 @@ metadata:
   last-reviewed: "2026-10-01"
   skill-author: K-Dense Inc.
 ---
-
 # Scientific Visualization
 
 Build figures that preserve scientific meaning before optimizing appearance. Separate universal principles from dated publisher rules, preserve raw data and transformations, use color redundantly, and inspect delivered files rather than trusting plotting defaults.
